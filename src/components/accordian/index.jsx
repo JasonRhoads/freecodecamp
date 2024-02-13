@@ -39,22 +39,23 @@ export default function Accordian() {
                                 ? () => handleMultiSelection(dataItem.id)
                                 : () => handleSingleSelection(dataItem.id)
                                 } 
-                                className="title"
-                            >
+                                >
+                                <div className="title">
                                 <h3>{dataItem.question}</h3>
                                 <span>+</span>
-                            </div>
+                                </div>
                             {
                                 enableMultiSelection 
                                 ? multiple.indexOf(dataItem.id) !== -1 &&
-                                    (<div className="content">
+                                (<div className="content">
                                         {dataItem.answer}
                                     </div>)
                                 : selected === dataItem.id && 
-                                    (<div className="content">
+                                (<div className="content">
                                         {dataItem.answer}
                                     </div>)
                             }
+                            </div>
                             {/* {
                                 selected === dataItem.id  || 
                                 multiple.indexOf(dataItem.id) !== -1? (

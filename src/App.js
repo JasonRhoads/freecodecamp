@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
 
       {/* Accordian Component */}
-      {/* <Accordian /> */}
+      <Accordian />
 
       {/* Random Color Component */}
       {/* <RandomColor /> */}
@@ -18,10 +18,10 @@ function App() {
       {/* <StarRating noOfStars={10}/> */}
 
       {/* Image slider Component*/}
-      <ImageSlider 
+      {/* <ImageSlider 
         url={"https://picsum.photos/v2/list"} 
         page={"1"} 
-        limit={"10"}/>
+        limit={"10"}/> */}
     </div>
   );
 }
