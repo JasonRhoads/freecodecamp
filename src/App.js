@@ -3,13 +3,14 @@ import Accordian from './components/accordian';
 import ImageSlider from './components/image-slider';
 import RandomColor from './components/random-color';
 import StarRating from './components/star-rating';
+import LoadMoreData from './components/load-more-data';
 
 function App() {
   return (
     <div className='App'>
 
       {/* Accordian Component */}
-      <Accordian />
+      {/* <Accordian /> */}
 
       {/* Random Color Component */}
       {/* <RandomColor /> */}
@@ -22,6 +23,9 @@ function App() {
         url={"https://picsum.photos/v2/list"} 
         page={"1"} 
         limit={"10"}/> */}
+      
+      {/* Load More Data Component*/}
+      <LoadMoreData />
     </div>
   );
 }
