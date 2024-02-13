@@ -1,3 +1,7 @@
 .qr-container {
     text-align: center;
 }
+
+.input-container {
+    margin-block: 20px;
+}
